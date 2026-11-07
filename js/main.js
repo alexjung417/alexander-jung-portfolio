@@ -34,30 +34,62 @@ document.addEventListener("DOMContentLoaded", () => {
     `)
     .join("");
 
-  // Tableau dashboards
+  
+  // Tableau Dashboard PDF Previews
   el("dashboard-list").innerHTML = c.dashboards
     .map((d, i) => `
       <article class="dashboard">
+
+        <!-- Dashboard Header -->
         <div class="dash-head">
           <div>
             <small>DASHBOARD 0${i + 1}</small>
+
             <h3>${esc(d.title)}</h3>
+
             <p>${esc(d.description)}</p>
           </div>
-          <a class="link" href="${esc(d.publicUrl)}"
-             target="_blank" rel="noreferrer">
-            Open in Tableau ↗
+        </div>
+
+
+<!-- PDF Preview -->
+<div class="frame pdf-frame">
+
+  <iframe
+    src="${esc(d.pdfUrl)}#toolbar=1&navpanes=0&view=FitH"
+    title="${esc(d.title)}"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+
+        <!-- Dashboard Actions -->
+        <div class="dashboard-actions">
+
+          <a
+            class="button"
+            href="${esc(d.pdfUrl)}"
+            target="_blank"
+            rel="noreferrer">
+            View Full PDF ↗
           </a>
+
+          <a
+            class="link"
+            href="${esc(d.publicUrl)}"
+            target="_blank"
+            rel="noreferrer">
+            Interactive Tableau ↗
+          </a>
+
         </div>
-        <div class="frame">
-          <iframe src="${esc(d.embedUrl)}"
-                  title="${esc(d.title)}"
-                  loading="lazy"
-                  allowfullscreen></iframe>
-        </div>
+
       </article>
     `)
     .join("");
+
 
   // Mobile navigation
   const button = el("menu-toggle");

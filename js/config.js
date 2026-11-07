@@ -7,7 +7,7 @@ const SITE_CONFIG = {
   githubProfile: "https://github.com/alexjung417",
   linkedin: "", // Add your LinkedIn URL, or leave blank to hide it.
   about: "I am an aspiring data analyst and business intelligence developer interested in transforming raw data into meaningful insights. I have earned a B.S. in Statistics with a Data Science minor from California Polytechnic State University. My work combines analytical problem-solving, data visualization, and machine learning to provide valuable, actionable insights. Clear communication is the most important metric in order for people to better understand the information in front of them.",
-  skills: ["Python", "R", "SQL", "Tableau","AWS","Statistical Analysis", "Machine Learning", "Data Visualization", "Data Analysis","Excel"],
+  skills: ["Python", "R", "SQL", "Tableau","AWS","Statistical Analysis", "Machine Learning", "Data Visualization", "Data Analysis", "Excel"],
   projects: [{
     number: "01",
     category: "TEAM CAPSTONE · MACHINE LEARNING · SIGNAL PROCESSING",
@@ -28,8 +28,8 @@ const SITE_CONFIG = {
   // }
   ],
   dashboards: [
-    {title:"AI Dashboard",description:"An interactive dashboard presenting an exploration of AI-related data.",embedUrl:"https://public.tableau.com/views/AIDashboard3/AIDashBoard2?:showVizHome=no&:embed=true",publicUrl:"https://public.tableau.com/views/AIDashboard3/AIDashBoard2"},
-    {title:"Room for Carbon: Airbnb & Carbon Mapping",description:"An interactive Tableau visualization exploring the relationship between Airbnb rentals and carbon-mapping data.",embedUrl:"https://public.tableau.com/views/RoomForCarbonAirbnbandCarbonMappingDataAnalysis/RoomForCarbonV2?:showVizHome=no&:embed=true",publicUrl:"https://public.tableau.com/views/RoomForCarbonAirbnbandCarbonMappingDataAnalysis/RoomForCarbonV2"}
+    {title:"AI Dashboard",description:"An interactive dashboard presenting an exploration of AI-related data.", pdfUrl:"dashboards/AI DashBoard (2).pdf",publicUrl:"https://public.tableau.com/views/AIDashboard3/AIDashBoard2"},
+    {title:"Room for Carbon: Airbnb & Carbon Mapping",description:"An interactive Tableau visualization exploring the relationship between Airbnb rentals and carbon-mapping data.",pdfUrl:"dashboards/Room For Carbon V2.pdf",publicUrl:"https://public.tableau.com/views/RoomForCarbonAirbnbandCarbonMappingDataAnalysis/RoomForCarbonV2"}
     
   ]
 };

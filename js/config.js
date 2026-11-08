@@ -5,7 +5,7 @@ const SITE_CONFIG = {
   location: "California",
   email: "alexanderjung417@gmail.com", // Replace with your professional email.
   githubProfile: "https://github.com/alexjung417",
-  linkedin: "", // Add your LinkedIn URL, or leave blank to hide it.
+  linkedin: "", //"https://www.linkedin.com/in/alexander-jung-111791237/"
   about: "I am an aspiring data analyst and business intelligence developer interested in transforming raw data into meaningful insights. I have earned a B.S. in Statistics with a Data Science minor from California Polytechnic State University. My work combines analytical problem-solving, data visualization, and machine learning to provide valuable, actionable insights. Clear communication is the most important metric in order for people to better understand the information in front of them.",
   skills: ["Python", "R", "SQL", "Tableau","AWS","Statistical Analysis", "Machine Learning", "Data Visualization", "Data Analysis", "Excel"],
   projects: [{
@@ -17,15 +17,15 @@ const SITE_CONFIG = {
     link: "https://github.com/alexjung417/Data-Science-Capstone-2025",
     linkLabel: "View project on GitHub"
   }
-  // ,{
-  //   number: "02",
-  //   category: "MACHINE LEARNING · BUSINESS ANALYSIS · Classification",
-  //   title: "IOWA ALCOHOL SALES INVESTIGATION",
-  //   description: "A team data science capstone exploring machine learning methods to detect and classify gray whale vocalizations in passive acoustic monitoring recordings. The project evaluated audio features through signal processing and models including Random Forest and KNN.",
-  //   tools: ["Python", "Machine Learning", "Linear Regression", "Web Scraping"],
-  //   link: "" https://github.com/alexjung417/Iowa-Demographics,
-  //   linkLabel: "View project on GitHub"
-  // }
+  ,{
+    number: "02",
+    category: "MACHINE LEARNING · BUSINESS ANALYSIS · PREDICTION",
+    title: "Iowa Alcohol Sales Investigation",
+    description: "A project investigating an Iowa Alcohol dataset to understand sales based on products and locations. The project evaluated sales and demographic features to make predictions based on a ridge regression model.",
+    tools: ["Python", "Machine Learning", "Linear Regression", "Web Scraping"],
+    link: "https://github.com/alexjung417/Iowa-Alcohol-Project",
+    linkLabel: "View project on GitHub"
+  }
   ],
   dashboards: [
     {title:"AI Dashboard",description:"An interactive dashboard presenting an exploration of AI-related data.", pdfUrl:"dashboards/AI DashBoard (2).pdf",publicUrl:"https://public.tableau.com/views/AIDashboard3/AIDashBoard2"},
